@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_she_bei__change"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.tjs.smarthome.SheBei_ChangeActivity">
+    <include layout="@layout/setting_item_title_one"></include>
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_weight="9"
+        android:layout_width="match_parent"
+        android:layout_height="0dp">
+        <LinearLayout
+            android:layout_margin="10dp"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="40dp">
+            <TextView
+                android:gravity="center_vertical"
+                android:layout_weight="1"
+                android:text="原设备码"
+                android:layout_width="0dp"
+                android:layout_height="match_parent" />
+            <ImageButton
+                android:id="@+id/im_change_pre"
+                android:src="@mipmap/qr"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+        <TextView
+            android:id="@+id/tv_pre"
+            android:layout_margin="10dp"
+            android:background="@drawable/text_background"
+            android:layout_width="match_parent"
+            android:layout_height="40dp" />
+        <LinearLayout
+            android:layout_margin="10dp"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="40dp">
+            <TextView
+                android:gravity="center_vertical"
+                android:layout_weight="1"
+                android:text="新设备码"
+                android:layout_width="0dp"
+                android:layout_height="match_parent" />
+            <ImageButton
+                android:id="@+id/im_change_new"
+                android:src="@mipmap/qr"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+        <EditText
+            android:id="@+id/et_new"
+            android:layout_margin="10dp"
+            android:background="@drawable/text_background"
+            android:layout_width="match_parent"
+            android:layout_height="40dp" />
+        <Button
+            android:layout_margin="10dp"
+            android:text="确认更换"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/zhukongqi_hideorshow_item"
+    android:background="@drawable/text_background"
+    android:layout_margin="5dp"
+    android:orientation="vertical"
+    android:visibility="gone"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:gravity="center_vertical"
+        android:layout_width="match_parent"
+        android:layout_height="40dp">
+        <TextView
+            android:text="主控器序列号"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <ImageButton
+            android:id="@+id/del_item"
+          android:layout_alignParentRight="true"
+            android:src="@mipmap/del"
+            android:layout_width="20dp"
+            android:layout_height="20dp" />
+    </RelativeLayout>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="40dp" />
+    <TextView
+        android:text="主控器IP"
+        android:layout_width="match_parent"
+        android:layout_height="30dp" />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="40dp" />
+    <TextView
+        android:text="主控器描述"
+        android:layout_width="match_parent"
+        android:layout_height="30dp" />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="40dp" />
+</LinearLayout>

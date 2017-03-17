@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_system"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.tjs.smarthome.SystemActivity">
+    <include layout="@layout/setting_item_title_one"></include>
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_weight="9"
+        android:layout_width="match_parent"
+        android:layout_height="0dp">
+    <LinearLayout
+        android:layout_margin="10dp"
+        android:orientation="horizontal"
+        android:background="@drawable/text_background"
+        android:layout_width="match_parent"
+        android:layout_height="40dp">
+        <TextView
+            android:text="账号"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent" />
+        <TextView
+            android:text="0012923909010"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_margin="10dp"
+        android:orientation="horizontal"
+        android:background="@drawable/text_background"
+        android:layout_width="match_parent"
+        android:layout_height="40dp">
+        <TextView
+            android:text="授权码"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent" />
+        <TextView
+            android:text="已授权"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+        <TextView
+            android:layout_margin="10dp"
+            android:text="修改密码"
+            android:background="@drawable/text_background"
+            android:layout_width="match_parent"
+            android:layout_height="40dp" />
+        <TextView
+            android:layout_margin="10dp"
+            android:text="下载更新"
+            android:background="@drawable/text_background"
+            android:layout_width="match_parent"
+            android:layout_height="40dp" />
+        <TextView
+            android:layout_margin="10dp"
+            android:text="关于"
+            android:background="@drawable/text_background"
+            android:layout_width="match_parent"
+            android:layout_height="40dp" />
+    </LinearLayout>
+
+</LinearLayout>

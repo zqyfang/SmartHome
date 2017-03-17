@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_service"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.tjs.smarthome.ServiceActivity">
+    <include layout="@layout/setting_item_title_one"></include>
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_weight="9"
+        android:layout_width="match_parent"
+        android:layout_height="0dp">
+        <TextView
+            android:paddingTop="10dp"
+            android:layout_margin="10dp"
+            android:text="云服务器IP地址"
+            android:layout_width="match_parent"
+            android:layout_height="30dp" />
+        <TextView
+            android:layout_margin="10dp"
+            android:background="@drawable/text_background"
+            android:text="121.43.104.6"
+            android:layout_width="match_parent"
+            android:layout_height="40dp" />
+        <TextView
+            android:paddingTop="10dp"
+            android:layout_margin="10dp"
+            android:text="云服务器端口"
+            android:layout_width="match_parent"
+            android:layout_height="30dp" />
+        <TextView
+            android:layout_margin="10dp"
+            android:background="@drawable/text_background"
+            android:text="9001"
+            android:layout_width="match_parent"
+            android:layout_height="40dp" />
+    </LinearLayout>
+</LinearLayout>

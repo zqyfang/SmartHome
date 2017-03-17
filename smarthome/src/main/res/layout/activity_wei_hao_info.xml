@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_wei_hao_info"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.tjs.smarthome.WeiHaoInfoActivity">
+    <include layout="@layout/setting_item_title_one"></include>
+    <android.support.v7.widget.SearchView
+        android:id="@+id/search_view"
+        android:iconifiedByDefault="true"
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="0dp">
+    </android.support.v7.widget.SearchView>
+    <ExpandableListView
+        android:id="@+id/ex_listview"
+        android:layout_weight="8"
+        android:layout_width="match_parent"
+        android:layout_height="0dp">
+
+    </ExpandableListView>
+</LinearLayout>

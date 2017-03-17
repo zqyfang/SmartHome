@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.tjs.smarthome">
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.FLASHLIGHT" />
+    <application
+        android:name=".MyApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.AppCompat.Light.NoActionBar">
+        <activity
+            android:name=".MainActivity"
+            android:launchMode="singleTask">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".base.BaseActivity" />
+        <activity
+            android:name=".SettingActivity"
+            android:launchMode="singleTask" />
+        <activity
+            android:name=".XiangmuInfoActivity"
+            android:launchMode="singleTask" />
+        <activity
+            android:name=".ZhuKongQiActivity"
+            android:launchMode="singleTask" />
+        <activity
+            android:name=".SheBeiInfoActivity"
+            android:launchMode="singleTask" />
+        <activity
+            android:name=".WeiHaoInfoActivity"
+            android:launchMode="singleTask" />
+        <activity
+            android:name=".LoginActivity"
+            android:theme="@style/login_dialog" />
+        <activity android:name=".InverntActivity" />
+        <activity android:name=".ServiceActivity" />
+        <activity android:name=".SheBei_ChangeActivity" />
+        <activity android:name=".SystemActivity"></activity>
+        <activity
+            android:name="com.tjs.smarthome.zxing.android.CaptureActivity"
+            android:theme="@android:style/Theme.NoTitleBar"
+            android:screenOrientation="portrait" >
+        </activity>
+    </application>
+
+</manifest>

@@ -1,0 +1,23 @@
+<android.support.v7.widget.Toolbar
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@color/toolbar"
+    android:id="@+id/main_toolbar"
+    android:layout_width="match_parent"
+    android:layout_height="0dp"
+    android:layout_weight="1">
+    <TextView
+        android:textColor="@android:color/white"
+        android:id="@+id/main_toolbar_tv"
+        android:textSize="20sp"
+        android:layout_gravity="center"
+        android:text="@string/title_home"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <ImageButton
+        android:id="@+id/main_title_ib"
+        android:layout_marginRight="10dp"
+        android:layout_gravity="right"
+        android:background="@mipmap/setting"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+</android.support.v7.widget.Toolbar>

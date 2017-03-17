@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.tjs.smarthome.MainActivity">
+
+    <include layout="@layout/home_title"></include>
+    <android.support.v4.view.ViewPager
+        android:id="@+id/main_vp"
+        android:layout_weight="8"
+        android:layout_width="match_parent"
+        android:layout_height="0dp">
+    </android.support.v4.view.ViewPager>
+
+    <RadioGroup
+        android:background="@color/toolbar"
+        android:orientation="horizontal"
+        android:id="@+id/main_rg"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+    <RadioButton
+        android:textColor="@android:color/white"
+        android:id="@+id/main_rg_home"
+        android:paddingTop="5dp"
+        android:drawableTop="@mipmap/zy_icon"
+        android:button="@null"
+        android:layout_weight="1"
+        android:layout_width="0dp"
+        android:gravity="center"
+        android:layout_height="match_parent"
+        android:text="@string/bottom_home" />
+        <RadioButton
+            android:textColor="@android:color/white"
+            android:id="@+id/main_rg_quyu"
+            android:paddingTop="5dp"
+            android:drawableTop="@mipmap/qy_icon"
+            android:button="@null"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:gravity="center"
+            android:layout_height="match_parent"
+            android:text="@string/bottom_quyu"/>
+        <RadioButton
+            android:textColor="@android:color/white"
+            android:id="@+id/main_rg_shebei"
+            android:paddingTop="5dp"
+            android:drawableTop="@mipmap/sb_icon"
+            android:button="@null"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:gravity="center"
+            android:layout_height="match_parent"
+            android:text="@string/bottom_shebei" />
+        <RadioButton
+            android:textColor="@android:color/white"
+            android:id="@+id/main_rg_anfang"
+            android:paddingTop="5dp"
+            android:drawableTop="@mipmap/af_icon"
+            android:button="@null"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:gravity="center"
+            android:layout_height="match_parent"
+            android:text="@string/bottom_anfang" />
+    </RadioGroup>
+</LinearLayout>

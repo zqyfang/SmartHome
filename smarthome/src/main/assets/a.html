@@ -1,0 +1,92 @@
+<!--四个div随鼠标移动显示隐藏-->
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<script src="http://libs.baidu.com/jquery/2.0.0/jquery.min.js"></script>
+<style type="text/css">
+		* {
+			margin: 0;
+			padding: 0;
+		}
+		ul {
+			list-style: none;
+			overflow: hidden;
+		}
+		li {
+			line-height: 50px;
+			background-color: blue;
+			float: left;
+			width: 25%;
+			height: 50px;
+			text-align: center;
+			color: white;
+		}
+		li:hover{
+			/*伪类*/
+			background-color: blueviolet;
+		}
+		div.box_btn {
+			width: 100%;
+			position: fixed;
+			bottom: 0;
+		}
+
+		#box_content div {
+			width: 100%;
+			background-color: pink;
+			position: absolute;
+			bottom: 50px;
+			top: 0px;
+		}
+	</style>
+
+<body>
+<div id="box_content">
+    <div class="sy" style="background-color: red;">
+
+    </div>
+    <div class="wz" style="background-color: black;">
+
+    </div>
+    <div class="sz" style="background-color: yellow;">
+
+    </div>
+    <div class="zx" style="background-color: pink;">
+
+    </div>
+</div>
+<div class="box_btn">
+    <ul id="list_ul">
+        <li id="sy" >首页</li>
+        <li id="wz" >文章</li>
+        <li id="sz" >设置</li>
+        <li id="zx" >中心</li>
+    </ul>
+</div>
+</body>
+
+</html>
+<script type="text/javascript">
+	var box_content = $("#box_content").children();
+	hideAll();//先隐藏所有
+	$(".sy").show();//显示首页的
+	$("li").on("mousemove",function () {
+		var id=$(this).attr("id");
+		showContent(id);
+	});
+	function showContent(classname) {
+		hideAll();//先隐藏所有，在显示当前的对应div
+		$("."+classname).show();
+	}
+	function hideAll() {
+		box_content.each(function () {
+			var box_class=$(this).attr("class");
+			$("."+box_class).hide();
+		})
+	}
+</script>
